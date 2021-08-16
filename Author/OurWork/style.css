@@ -1,0 +1,132 @@
+:root {
+  --primary-color: orange;
+  --secondary-color: #ffa400;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  height: 200px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.work {
+  max-width: 1200px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.work__heading {
+  color: #1a0a3b;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.work__heading:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0rem;
+  width: 3.5rem;
+  height: 0.6rem;
+  border-radius: 4px;
+  background-color: #00c899;
+}
+
+.work__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.work-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.work-tab__item {
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  border: 1px solid #00c899;
+  text-align: center;
+  border-radius: 2rem 0 2rem 2rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.work-tab__item:hover {
+  color: white;
+  background-color: #00c899;
+}
+
+.work-tab__item:not(:first-child) {
+  margin-left: 1rem;
+}
+
+.work__all {
+  display: inline-block;
+  padding: 5px 1rem;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  color: #00c899;
+  background-color: rgba(0, 200, 153, 0.25);
+}
+
+.work__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -1.5rem;
+}
+
+.work__item {
+  width: calc(25% - 1.5rem);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-left: 1.5rem;
+}
+
+.work__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=style.css.map */

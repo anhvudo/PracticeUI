@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+</head>
+<body>
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <input type="checkbox" name="" id="">
+                    </th>
+                    <th>TIPO</th>
+                    <th>CODIGO</th>
+                    <th>DESCRIPCION</th>
+                    <th>MARCA</th>
+                    <th>EN CLIENTE</th>
+                    <th>ACTIVO</th>
+                    <th>ESTADO</th>
+                    <th>ACCIONS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>
+                        <i class="ti ti-truck"></i>
+                    </td>
+                    <td>PA-005</td>
+                    <td><p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, omnis quo consectetur sequi amet magnam soluta, assumenda voluptatibus quam animi vel doloribus iste magni dolorem est odio eius tempore vitae.</p></td>
+                    <td>HP</td>
+                    <td>
+                        <div class="toggle">
+                            <input type="checkbox" name="client" id="toggle-client" class="toggle-input">
+                            <label for="toggle-client" class="toggle-label"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="toggle">
+                            <input type="checkbox" name="active" id="toggle-active" class="toggle-input">
+                            <label for="toggle-active" class="toggle-label"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="status status--active">Active</span>
+                    </td>
+                    <td>
+                        <div class="action">
+                            <i class="ti ti-pencil action-icon"></i>
+                            <i class="ti ti-world  action-icon"></i>
+                            <i class="ti ti-trash action-icon"></i>
+                        </div>
+                    </td>
+                </tr>
+                <!-- <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>
+                        <i class="ti ti-truck"></i>
+                    </td>
+                    <td>PA-005</td>
+                    <td><p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, omnis quo consectetur sequi amet magnam soluta, assumenda voluptatibus quam animi vel doloribus iste magni dolorem est odio eius tempore vitae.</p></td>
+                    <td>HP</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>
+                        <span class="status status--active">Active</span>
+                    </td>
+                    <td>
+                        <div class="action">
+                            <i class="ti ti-pencil action-icon"></i>
+                            <i class="ti ti-world  action-icon"></i>
+                            <i class="ti ti-trash action-icon"></i>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>
+                        <i class="ti ti-truck"></i>
+                    </td>
+                    <td>PA-005</td>
+                    <td><p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, omnis quo consectetur sequi amet magnam soluta, assumenda voluptatibus quam animi vel doloribus iste magni dolorem est odio eius tempore vitae.</p></td>
+                    <td>HP</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>
+                        <span class="status status--active">Active</span>
+                    </td>
+                    <td>
+                        <div class="action">
+                            <i class="ti ti-pencil action-icon"></i>
+                            <i class="ti ti-world  action-icon"></i>
+                            <i class="ti ti-trash action-icon"></i>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>
+                        <i class="ti ti-truck"></i>
+                    </td>
+                    <td>PA-005</td>
+                    <td><p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, omnis quo consectetur sequi amet magnam soluta, assumenda voluptatibus quam animi vel doloribus iste magni dolorem est odio eius tempore vitae.</p></td>
+                    <td>HP</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>
+                        <span class="status status--active">Active</span>
+                    </td>
+                    <td>
+                        <div class="action">
+                            <i class="ti ti-pencil action-icon"></i>
+                            <i class="ti ti-world  action-icon"></i>
+                            <i class="ti ti-trash action-icon"></i>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>
+                        <i class="ti ti-truck"></i>
+                    </td>
+                    <td>PA-005</td>
+                    <td><p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, omnis quo consectetur sequi amet magnam soluta, assumenda voluptatibus quam animi vel doloribus iste magni dolorem est odio eius tempore vitae.</p></td>
+                    <td>HP</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>
+                        <span class="status status--active">Active</span>
+                    </td>
+                    <td>
+                        <div class="action">
+                            <i class="ti ti-pencil action-icon"></i>
+                            <i class="ti ti-world  action-icon"></i>
+                            <i class="ti ti-trash action-icon"></i>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>
+                        <i class="ti ti-truck"></i>
+                    </td>
+                    <td>PA-005</td>
+                    <td><p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, omnis quo consectetur sequi amet magnam soluta, assumenda voluptatibus quam animi vel doloribus iste magni dolorem est odio eius tempore vitae.</p></td>
+                    <td>HP</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>
+                        <span class="status status--active">Active</span>
+                    </td>
+                    <td>
+                        <div class="action">
+                            <i class="ti ti-pencil action-icon"></i>
+                            <i class="ti ti-world  action-icon"></i>
+                            <i class="ti ti-trash action-icon"></i>
+                        </div>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

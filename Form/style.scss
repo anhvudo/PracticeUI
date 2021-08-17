@@ -1,0 +1,224 @@
+$primary-color: #fa4c53;
+$secondary-color: #fd9c84;
+$gradient: linear-gradient(to right, $primary-color, $secondary-color);
+$text-color: #291667;
+html {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  height: 200px;
+  padding: 2rem;
+  background-color: #f3f3f3;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+input,
+textarea,
+button,
+select {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+}
+@mixin maxWidth($value) {
+  @media screen and (max-width: $value) {
+    @content;
+  }
+}
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+@mixin flexbox(
+  $align: flex-start,
+  $justify: flex-start,
+  $flex-direction: row,
+  $wrap: nowrap
+) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $flex-direction;
+  flex-wrap: $wrap;
+}
+body {
+  background-color: #fbfbfd;
+  padding: 5rem;
+  height: 100%;
+}
+.signup {
+  width: 100%;
+  height: 100%;
+  padding: 5rem;
+  background-color: #f3f7ff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px rgba($color: #000000, $alpha: 0.1);
+  display: flex;
+  justify-content: space-between;
+  &__content,
+  &__image {
+    width: calc(50% - 4rem);
+  }
+  &__heading {
+    font-weight: bold;
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+    color: $text-color;
+  }
+  &__caption {
+    color: $primary-color;
+    font-weight: bold;
+    margin-bottom: 4.5rem;
+    position: relative;
+    padding-left: 12rem;
+    &:before {
+      content: "";
+      width: 10rem;
+      height: 2px;
+      background-color: $primary-color;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -1px;
+    }
+  }
+  &-social {
+    @include flexbox(stretch, space-between);
+    margin-bottom: 6rem;
+    &__item {
+      padding: 1.5rem 2.5rem;
+      border-radius: 10px;
+      border: 1px solid #eee;
+      cursor: pointer;
+      @include flexbox(center, center);
+      color: $text-color;
+      width: calc(50% - 1.5rem);
+    }
+    &__icon {
+      margin-right: 2rem;
+    }
+  }
+  &__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &-form {
+    &__label {
+      color: $text-color;
+      display: inline-block;
+      margin-bottom: 1rem;
+      transform: translateX(1rem);
+      cursor: pointer;
+    }
+    &__input {
+      padding: 1.5rem 2rem;
+      border: 1px solid #eee;
+      background-color: #fafbff;
+      border-radius: 10px;
+      display: block;
+      outline: none;
+      width: 100%;
+      transition: all 0.25s linear;
+      &:focus {
+        background-color: white;
+        border-color: $primary-color;
+        & + .signup-form__check {
+          background-color: $primary-color;
+          color: white;
+        }
+      }
+    }
+    &__row {
+      @include flexbox(stretch, space-between);
+      margin-bottom: 30px;
+      .signup-form__group {
+        width: calc(50% - 1.5rem);
+      }
+    }
+    &__term {
+      input {
+        display: none;
+        &:checked + label:before {
+          border-color: $primary-color;
+          background-color: $primary-color;
+        }
+      }
+      label {
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 3rem;
+        padding-left: 3.5rem;
+        margin-bottom: 5rem;
+        &:before {
+          content: "";
+          @include size(4rem);
+          border-radius: 8px;
+          background-color: #eee;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          border: 1px solid #ccc;
+          transition: all 0.25s linear;
+        }
+      }
+    }
+    &__submit {
+      @include size(8rem);
+      color: white;
+      border: 0;
+      border-radius: 3rem;
+      background-color: $primary-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      cursor: pointer;
+      margin-bottom: 65px;
+      box-shadow: 0 10px 10px 0 rgba($color: $primary-color, $alpha: 0.5);
+    }
+    &__validate {
+      position: relative;
+      .signup-form__input {
+        padding-right: 6rem;
+      }
+    }
+    &__check {
+      @include size(3rem, 3rem);
+      border-radius: 10px;
+      background-color: #eee;
+      color: $text-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: 2rem;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 0.25s linear;
+    }
+  }
+  &__already {
+    color: $text-color;
+    a {
+      color: $primary-color;
+    }
+  }
+}
